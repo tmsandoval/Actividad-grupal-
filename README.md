@@ -26,4 +26,5 @@ samtools index RESULTS/read_sorted.bam
     6. Llevar a cabo el llamado de variantes:
 
 bcftools mpileup -Ou -f REFERENCE/hg38.fa RESULTS/read_sorted.bam | bcftools call -vmO z -o RESULTS/read_rawcalls.vcf.gz
+Una vez ejecutados estos pasos a partir de cada fichero .fq, y tras obtener los archivos .vcf correspondientes, tendréis que identificar las variantes para cada individuo, asociarlas a un fenotipo (una enfermedad monogénica).
 
