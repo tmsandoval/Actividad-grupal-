@@ -1,4 +1,4 @@
-# Actividad-grupal-
+<h1>Actividad-grupal</h1> 
 
 # Análisis bioinformático de variantes genéticas
 Análisis bioinformático de secuencias de DNA, con el fin de identificar variantes genéticas, en forma de SNP o indels, en varias parejas de individuos. Además, tras la identificación de dichas variantes, podréis determinar su relación con patologías monogénicas y, adicionalmente, determinar la probabilidad de que la descendencia de dichas parejas pueda padecer la enfermedad mendeliana identificada.
