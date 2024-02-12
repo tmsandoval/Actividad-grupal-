@@ -3,6 +3,7 @@
 # Análisis bioinformático de variantes genéticas
 Análisis bioinformático de secuencias de DNA, con el fin de identificar variantes genéticas, en forma de SNP o indels, en varias parejas de individuos. Además, tras la identificación de dichas variantes, podréis determinar su relación con patologías monogénicas y, adicionalmente, determinar la probabilidad de que la descendencia de dichas parejas pueda padecer la enfermedad mendeliana identificada.
 Se proporcionará una carpeta con los ficheros .fq correspondientes y las parejas asignadas.
+ 
     1. Indexar el genoma de referencia hg38 (podéis descargarlo aquí) mediante bwa:
 
 bwa index REFERENCE/hg38.fa
